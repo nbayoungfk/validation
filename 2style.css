@@ -1,0 +1,76 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #e0eafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Box container for the form */
+.boxe {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.boxe:hover {
+    transform: translateY(-10px);
+}
+
+/* Form heading */
+.boxe h1 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.boxe h5 {
+    font-size: 14px;
+    margin-bottom: 25px;
+    color: #888;
+    line-height: 1.6;
+}
+
+/* Input fields styling */
+.boxe input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Change background and shadow when the input is focused */
+.boxe input[type="text"]:focus {
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Error messages */
+p[id^="error"] {
+    color: #e63946;
+    font-size: 13px;
+    text-align: left;
+    margin-bottom: 10px;
+    display: none
+
+}
